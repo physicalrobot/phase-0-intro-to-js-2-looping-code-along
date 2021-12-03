@@ -1,18 +1,27 @@
 // Code your solutions in this file
 
 const p = ['Guadalupe', 'Ollie', 'Aki'];
-function writeCards(name, event) {
+
+
+function writeCards(names, event) {
+    let newname = [];
+    for (let i = 0; i < names.length; i++) {
 
 
 
-    for (let i = 0; i < name.length; i++) {
-        let namelist = [];
+        newname[i] = (`Thank you, ${names[i]}, for the wonderful ${event} gift!`)
 
-
-        namelist[i] = console.log(`Thank you, ${name[i]} for the wonderful surprise ${event} gift!`);
     }
-    return namelist;
-
+    return newname;
 }
 
-writeCards(p, 'birthday');
+function countDown(n) {
+
+    while (n >= 0) {
+        console.log(n--);
+
+    }
+}
+
+
+
